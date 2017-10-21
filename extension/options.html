@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TabItYourWay Options</title>
+<style>
+textarea#custom_css_textarea { width: 700px; height: 160px; margin-bottom: 15px; }
+textarea#custom_content_textarea { width: 700px; height: 160px; margin-bottom: 15px; }
+fieldset { border: 0; padding: 0; margin-bottom: 15px; }
+p#success_msg { color: #009900; margin-bottom: 15px; }
+p#failure_msg { color: #CC0000; margin-bottom: 15px; }
+</style>
+</head>
+
+<body>
+<label for="custom_content_textarea">Custom HTML:</label>
+<textarea id="custom_content_textarea"></textarea>
+
+<label for="custom_css_textarea">Custom Style:</label>
+<textarea id="custom_css_textarea"></textarea>
+
+<fieldset>
+    <input type="checkbox" id="remove_icons"> <label for="remove_icons">Remove options icon from New Tab page (these options can still be accessed from the Extensions page).</label>
+</fieldset>
+
+<p id="success_msg" style="display:none">Options saved.</p>
+<p id="failure_msg" style="display:none">Failed to save options.</p>
+
+<button id="save">Save</button> <button id="restore_defaults">Restore defaults (w/o saving)</button> <button id="clear_all">Clear all (for a blank screen)</button>
+
+<script src="default_options.js"></script>
+<script src="options.js"></script>
+</body>
+</html>
+
