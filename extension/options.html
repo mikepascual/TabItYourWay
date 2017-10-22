@@ -7,6 +7,7 @@ label.textarea_label { display: block; margin-bottom: 5px; }
 textarea#custom_css_textarea { width: 700px; height: 160px; margin-bottom: 15px; }
 textarea#custom_content_textarea { width: 700px; height: 160px; margin-bottom: 15px; }
 fieldset { border: 0; padding: 0; margin-bottom: 15px; }
+p.save_msg { display: inline; }
 p#success_msg { color: #009900; margin-bottom: 15px; }
 p#failure_msg { color: #CC0000; margin-bottom: 15px; }
 </style>
@@ -23,10 +24,11 @@ p#failure_msg { color: #CC0000; margin-bottom: 15px; }
     <input type="checkbox" id="show_icons"> <label for="show_icons">Show options icon on New Tab page (if removed, options can still be accessed from the Extensions page).</label>
 </fieldset>
 
-<p id="success_msg" style="display:none">Options saved.</p>
-<p id="failure_msg" style="display:none">Failed to save options.</p>
-
-<button id="save">Save</button> <button id="restore_defaults">Restore defaults (w/o saving)</button> <button id="clear_all">Clear all (for a blank screen)</button>
+<button id="save">Save</button>
+<button id="restore_defaults">Restore defaults (w/o saving)</button>
+<button id="clear_all">Clear all (for a blank screen)</button>
+<p class="save_msg" id="success_msg" style="display:none">Options saved.</p>
+<p class="save_msg" id="failure_msg" style="display:none">Failed to save options.</p>
 
 <script src="default_options.js"></script>
 <script src="options.js"></script>
