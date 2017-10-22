@@ -2,9 +2,9 @@ function load_custom_page() {
     chrome.storage.sync.get({
         customCSS: custom_css_default,
         customContent: custom_content_default,
-        removeIcons: false
+        showIcons: true
     }, function(items) {
-        if (items.removeIcons) {
+        if (!items.showIcons) {
             document.getElementById('toolbar').style.display = 'none';
         }
         document.getElementById('css_main').innerHTML = items.customCSS;
