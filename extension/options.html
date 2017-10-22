@@ -3,6 +3,7 @@
 <head>
 <title>TabItYourWay Options</title>
 <style>
+label.textarea_label { display: block; margin-bottom: 5px; }
 textarea#custom_css_textarea { width: 700px; height: 160px; margin-bottom: 15px; }
 textarea#custom_content_textarea { width: 700px; height: 160px; margin-bottom: 15px; }
 fieldset { border: 0; padding: 0; margin-bottom: 15px; }
@@ -12,10 +13,10 @@ p#failure_msg { color: #CC0000; margin-bottom: 15px; }
 </head>
 
 <body>
-<label for="custom_content_textarea">Custom HTML:</label>
+<label class="textarea_label" for="custom_content_textarea">Custom HTML:</label>
 <textarea id="custom_content_textarea"></textarea>
 
-<label for="custom_css_textarea">Custom Style:</label>
+<label class="textarea_label" for="custom_css_textarea">Custom Style:</label>
 <textarea id="custom_css_textarea"></textarea>
 
 <fieldset>
